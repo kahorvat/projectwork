@@ -1,0 +1,5 @@
+Karoly Horvath
+Responsible for manual solutiontests for business customers in the EVPL product segment
+Profile: functional process testing
+Business scenarios covered: Fullfillment, Modification, Termination, Product change and so on...
+Complexity: application chain of 10-12 target applications
