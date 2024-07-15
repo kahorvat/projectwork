@@ -1,6 +1,6 @@
 Tesco main page: https://bevasarlas.tesco.hu/groceries/hu-HU
 
-# User Story 1 : Check if products are available in my area
+# User Story 1 : Check if delivery service is available in my area
 
 Subpage: https://tesco.hu/bevasarlas/tesco-otthonrol/
 
