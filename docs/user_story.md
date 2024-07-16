@@ -5,7 +5,7 @@ Tesco main page: https://bevasarlas.tesco.hu/groceries/hu-HU
 Subpage: https://tesco.hu/bevasarlas/tesco-otthonrol/
 
 Summary:  As a potential user by entering my ZIP code on the page 
-I want to know first, if products are delivered in my area. 
+I want to know first if products are delivered in my area. 
 If I enter a valid ZIP code (1112) a positive result should be displayed. 
 This validation helps me decide if it is worth registering.
 
