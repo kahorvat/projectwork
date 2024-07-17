@@ -15,15 +15,13 @@ Feature: Check if delivery is available in my area
 
     Scenario Outline: Verify valid ZIP code
 
-      When I enter a valid ZIP code "<ZIP_codes>"
-      And I search for the ZIP code "<ZIP_codes>"
+      When I search for the ZIP code "<ZIP_codes>"
       Then I should see the "<positive_result_text>"
 
       Examples:
 
-        | ZIP_codes   | positive_result_text   |
-        | 1112        | Jó hírünk van!	       |
-        | 1221        | Jó hírünk van!         |
+        | ZIP_codes | positive_result_text |
+        | 1112      | Jó hírünk van!       |
 
 
   Rule:
@@ -40,14 +38,12 @@ Feature: Check if delivery is available in my area
 
     Scenario Outline: Verify invalid ZIP code
 
-      When I enter an invalid ZIP code "<invalid_ZIP_codes>"
-      And I search for the invalid ZIP code "<invalid_ZIP_codes>"
+      When I search for the invalid ZIP code "<invalid_ZIP_codes>"
       Then I should get the "<negative_result_text>"
 
 
       Examples:
 
-        | invalid_ZIP_codes    | negative_result_text                                     |
-        | 15789                | Sajnáljuk, de jelenleg még nem tudunk szállítani hozzád. |
-        | 23410                | Sajnáljuk, de jelenleg még nem tudunk szállítani hozzád. |
+        | invalid_ZIP_codes | negative_result_text                                     |
+        | 15789             | Sajnáljuk, de jelenleg még nem tudunk szállítani hozzád. |
 

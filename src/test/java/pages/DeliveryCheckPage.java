@@ -27,12 +27,13 @@ public class DeliveryCheckPage extends BasePage {
     @FindBy(xpath = "//h2 [contains(text(),'Jó hírünk van')]")
     WebElement positiveResultText;
 
-    @FindBy (xpath="//h2 [contains(text(),'Sajnáljuk')]")
+    @FindBy(xpath = "//h2 [contains(text(),'Sajnáljuk')]")
     WebElement negativeResultText;
 
     //metódusok
 
     public void acceptCookies() {
+        wait.until(ExpectedConditions.elementToBeClickable(acceptCookiesButton));
         acceptCookiesButton.click();
     }
 
@@ -41,19 +42,18 @@ public class DeliveryCheckPage extends BasePage {
         zipCodeCheckerField.sendKeys(zipCode);
     }
 
-    public void enterInvalidZipCode(String invalidZipCode) {
-        wait.until(ExpectedConditions.elementToBeClickable(zipCodeCheckerField));
-        zipCodeCheckerField.sendKeys(invalidZipCode);}
 
-    public void checkZipCode() {
+    public void checkZipCode(String zipCode) {
+        wait.until(ExpectedConditions.elementToBeClickable(zipCodeCheckerField));
+        zipCodeCheckerField.sendKeys(zipCode);
         zipCodeCheckerButton.click();
     }
 
-   public String getPositiveResultText(){
+    public String getPositiveResultText() {
         wait.until(ExpectedConditions.visibilityOf(positiveResultText));
-       return positiveResultText.getText();
+        return positiveResultText.getText();
 
-}
+    }
 
     public String getNegativeResultText() {
         wait.until(ExpectedConditions.visibilityOf(negativeResultText));
