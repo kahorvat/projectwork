@@ -8,16 +8,13 @@ Feature: Login as a registered user
 
     Background:
 
-      Given I am a registered user
-      And I open the home page
-      And I accept the cookies
+      Given I open the home page
+      And I accept homepage cookies
+      And I navigate to the Sign-in page
 
     Scenario:
 
-      When I click on the Sign-in button
-      Then a Login page is displayed
-      And I can enter my e-mail address
-      And I can enter my password
-      And when I click on the Sign-in button
-      Then I receive a greeting message
-      And my user profile is made available for me.
+      When I login with e-mail "horvath_karoly@yahoo.com" and password "KareszTesco11++"
+      Then a greeting message is displayed
+      And my user profile is available
+
