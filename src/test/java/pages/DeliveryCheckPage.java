@@ -46,7 +46,7 @@ public class DeliveryCheckPage extends BasePage {
     public void checkZipCode(String zipCode) {
         wait.until(ExpectedConditions.elementToBeClickable(zipCodeCheckerField));
         zipCodeCheckerField.sendKeys(zipCode);
-        zipCodeCheckerButton.click();
+        zipCodeCheckerButton.submit();
     }
 
     public String getPositiveResultText() {

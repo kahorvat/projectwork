@@ -7,8 +7,7 @@ Feature: Empty shopping cart
 
     Background:
 
-      Given I am a registered user
-      And I open the home page
+      Given I open the home page
       And I accept the cookies
       And I log in
       And I have products in my shopping cart

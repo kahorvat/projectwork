@@ -5,18 +5,18 @@ Feature:  Filter for clubcard products
     Given I open the home page
     And I accept the cookies
 
-  Rule:
+  Rule: clubcard products are displayed when clubcard filter is applied
 
   If I enter a specific keyword for search
-    And I select "clubcard árak" on the search result page
-      Then some products labeled with clubcard are displayed in the list.
+  and I select clubcard árak (filter) on the search result page
+  then products labeled with clubcard are displayed.
 
 
     Scenario Outline: Filter for clubcard products
 
-      When  I search for a product <productName>
-      And I click on "clubcard árak" on the result page
-      Then some of the products filtered should contain the text "Clubcard ár" <label>
+      When I search for a product <productName>
+      And I click on clubcard árak
+      Then product description should contain a <label>
 
       Examples:
         | productName | label       |

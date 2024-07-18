@@ -16,26 +16,28 @@ public class BasePage {
     protected static WebDriver driver;
     protected static WebDriverWait wait;
 
+
     public BasePage(WebDriver driver) {
         BasePage.driver = driver;
         BasePage.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
-        PageFactory.initElements(driver, this);}
-
-        public boolean isLoaded(WebElement element) {
-            try {
-                return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
-            } catch (TimeoutException e) {
-                fail (e);
-                return false;
-            }
-        }
-
-        public boolean isInteractable(WebElement element) {
-            return wait.until(ExpectedConditions.elementToBeClickable(element)).isEnabled();
-        }
-
-
+        PageFactory.initElements(driver, this);
     }
+
+    public boolean isLoaded(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+        } catch (TimeoutException e) {
+            fail(e);
+            return false;
+        }
+    }
+
+    public boolean isInteractable(WebElement element) {
+        return wait.until(ExpectedConditions.elementToBeClickable(element)).isEnabled();
+    }
+
+
+}
 
 

@@ -4,18 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b99bd6c0-c16c-44d7-9dde-858e6fbfa089" name="Changes" comment="" />
+    <list default="true" id="b99bd6c0-c16c-44d7-9dde-858e6fbfa089" name="Changes" comment="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/user_story.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_story.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DeliveryCheckPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DeliveryCheckPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/TescoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TescoSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/checkDeliveryService.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_3.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/filterForClubcardProducts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_4.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/changeLanguage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_5.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/userLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_6.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/emptyShoppingCart.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kahorvat&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kahorvat/projectwork.git&quot;,
+    &quot;accountId&quot;: &quot;94afd906-cb56-47ce-ac1b-73fc75d8b93e&quot;
+  }
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2jH2OaI2X4KjS8IyxfLxmLaMVcU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,11 +67,130 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: productSearch.executor": "Run",
+    "Cucumber Java.Feature: user_story_1.executor": "Run",
+    "Cucumber Java.Feature: user_story_5.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
+    "Cucumber Java.Scenario: Search for a product that is not available.executor": "Run",
+    "Cucumber Java.Scenario: Search for a product.executor": "Run",
+    "Cucumber Java.Scenario: Verify valid ZIP code.executor": "Run",
+    "JUnit.TescoSteps.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/DT/projectwork/src/test/java/steps",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Search for a product that is not available">
+    <configuration name="Feature: productSearch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: productSearch" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: user_story_1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user_story_1.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: user_story_1" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search for a product that is not available" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="NAME_FILTER" value="^Search for a product that is not available$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for a product that is not available$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for a product that is not available" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search for a product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="NAME_FILTER" value="^Search for a product$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for a product$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for a product" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user_story_5.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Search for a product that is not available" />
+        <item itemvalue="Cucumber Java.Feature: productSearch" />
+        <item itemvalue="Cucumber Java.Scenario: Search for a product" />
+        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Feature: user_story_1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,6 +200,119 @@
       <option name="presentableId" value="Default" />
       <updated>1721029655258</updated>
     </task>
+    <task id="LOCAL-00001" summary="test commit KHO">
+      <option name="closed" value="true" />
+      <created>1721032408478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721032408478</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test commit KHO">
+      <option name="closed" value="true" />
+      <created>1721032991056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721032991056</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit 1 - initial user stories are uploaded">
+      <option name="closed" value="true" />
+      <created>1721043582979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721043582979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit 2 - hasmarks are added - layout formation">
+      <option name="closed" value="true" />
+      <created>1721043789322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721043789322</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit 3 - User Story 1 renamed">
+      <option name="closed" value="true" />
+      <created>1721049877151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721049877151</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit 4 - Feature file 1 upload">
+      <option name="closed" value="true" />
+      <created>1721063726359</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721063726359</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit 5 - Feature file 2 upload">
+      <option name="closed" value="true" />
+      <created>1721063856248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721063856248</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit 6 - Feature file 3 to 6 upload">
+      <option name="closed" value="true" />
+      <created>1721063917106</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721063917106</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit 7 -  2. project day work : first feature implemented - all feature files renamed - + classes uploaded">
+      <option name="closed" value="true" />
+      <created>1721143650715</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721143650715</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit 8 -  3. project day work : first feature finalized - simplified step definitions and methods + code reformatted">
+      <option name="closed" value="true" />
+      <created>1721213918045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721213918045</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow">
+      <option name="closed" value="true" />
+      <created>1721225335905</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721225335905</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit KHO" />
+    <MESSAGE value="commit 1 - initial user stories are uploaded" />
+    <MESSAGE value="commit 2 - hasmarks are added - layout formation" />
+    <MESSAGE value="commit 3 - User Story 1 renamed" />
+    <MESSAGE value="commit 4 - Feature file 1 upload" />
+    <MESSAGE value="commit 5 - Feature file 2 upload" />
+    <MESSAGE value="commit 6 - Feature file 3 to 6 upload" />
+    <MESSAGE value="commit 7 -  2. project day work : first feature implemented - all feature files renamed - + classes uploaded" />
+    <MESSAGE value="commit 8 -  3. project day work : first feature finalized - simplified step definitions and methods + code reformatted" />
+    <MESSAGE value="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow" />
   </component>
 </project>

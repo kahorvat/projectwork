@@ -2,8 +2,7 @@ Feature: Change the language of the web page
 
   Rule: change language from English to Magyar
 
-  If I click on the English button in the menu bar
-  then the page is reloaded
+  If the user clicks on the English button in the menu bar then the page is reloaded
   and all description on the page is displayed in English.
 
     Background:

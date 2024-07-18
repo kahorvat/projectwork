@@ -18,3 +18,7 @@ Feature: Login as a registered user
       Then a greeting message is displayed
       And my user profile is available
 
+
+
+
+

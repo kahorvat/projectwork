@@ -8,14 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends BasePage {
-    
+
     public HomePage(WebDriver inputDriver) {
         super(inputDriver);
         PageFactory.initElements(inputDriver, this);
     }
 // UI elemek
 
-    @FindBy(css = ".ddsweb-cookies-notification__form:nth-of-type(1) >button > span")
+    @FindBy(css = ".ddsweb-cookies-notification__form:nth-of-type(1) >button")
     WebElement acceptCookieButton;
 
     @FindBy(xpath = "//a[@id='utility-header-login-link']")
@@ -35,6 +35,13 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//a[@id='utility-header-account-link']")
     WebElement userProfileLink;
+
+    @FindBy(xpath = "//input[@id='search-input']")
+    WebElement productSearchField;
+
+    @FindBy(xpath = "//*[@id='search-form']/button[@type='submit']")
+    WebElement productSearchButton;
+
 
     // metódusok
 
@@ -60,15 +67,23 @@ public class HomePage extends BasePage {
         loginButton.click();
     }
 
-    public boolean validateGreetingSign() {
-        greetingSign.getText();
-        Assertions.assertEquals("Üdvözlünk Karesz", greetingSign);
-        return true;
+    public void validateGreetingSign() {
+        wait.until(ExpectedConditions.visibilityOf(greetingSign));
+        Assertions.assertEquals("Üdvözlünk Karesz", greetingSign.getText());
+
     }
 
-    public boolean validateUserProfile() {
-        userProfileLink.getText();
-        Assertions.assertEquals("Felhasználói Fiókom", userProfileLink);
-        return true;
+    public void validateUserProfile() {
+        wait.until(ExpectedConditions.visibilityOf(userProfileLink));
+        Assertions.assertEquals("Felhasználói Fiókom", userProfileLink.getText());
     }
+
+    public SearchResultPage searchProduct(String productName) {
+        productSearchField.sendKeys(productName);
+        wait.until(ExpectedConditions.elementToBeClickable(productSearchButton));
+        productSearchButton.click();
+        return new SearchResultPage(driver);
+    }
+
 }
+

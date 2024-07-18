@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.DeliveryCheckPage;
 import pages.HomePage;
+import pages.SearchResultPage;
 
 import java.time.Duration;
 
@@ -24,6 +25,7 @@ public class TescoSteps {
 
     private DeliveryCheckPage deliveryCheckPage;
     private HomePage homePage;
+    private SearchResultPage searchResultPage;
 
     /* Selenium Webdriver elindítása */
     @Before
@@ -101,16 +103,6 @@ public class TescoSteps {
         homePage.startLogin();
     }
 
-    /*@When("I enter my e-mail address {String}")
-    public void iEnterMyEMailAddress(String email) {
-        homePage.enterEmailAdress(email);
-    }
-
-    @And("I enter my password {String}")
-    public void iEnterMyPassword(String password) {
-        homePage.enterPassword(password);
-    } */
-
 
     @Then("a greeting message is displayed")
     public void aGreetingMessageIsDisplayed() {
@@ -122,7 +114,44 @@ public class TescoSteps {
         homePage.validateUserProfile();
     }
 
+    @When("I search for a product {string}")
+    public void iSearchForAProduct(String productName) {
+        homePage.searchProduct(productName);
+    }
 
+    @Then("products are displayed {string}")
+    public void productsAreDisplayed(String numberOfProducts) {
+        searchResultPage = new SearchResultPage(driver);
+        searchResultPage.verifySearchResultNumber(numberOfProducts);
+    }
+
+    @And("the name of the product contains {string}")
+    public void theNameOfTheProductContainsProductName(String productName) {
+        searchResultPage.checkProductName(productName);
+    }
+
+    @And("the result page shows {string}")
+    public void theResultPageShows(String productName) {
+        searchResultPage.checkSearchKeyword(productName);
+    }
+
+
+    @When("I search for {string}")
+    public void iSearchFor(String invalidProductName) {
+        homePage.searchProduct(invalidProductName);
+    }
+
+    @Then("a warning message is displayed")
+    public void aWarningMessageIsDisplayed() {
+        searchResultPage = new SearchResultPage(driver);
+        searchResultPage.checkWarningMessage();
+    }
+
+    @And("the start shopping button is displayed")
+    public void theButtonIsDisplayed() {
+        searchResultPage.checkStartShoppingButton();
+    }
 }
+
 
 
