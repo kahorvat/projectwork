@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b99bd6c0-c16c-44d7-9dde-858e6fbfa089" name="Changes" comment="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow">
+    <list default="true" id="b99bd6c0-c16c-44d7-9dde-858e6fbfa089" name="Changes" comment="commit 10 -  4. project day work : feature product search successfully implemented/run - all project files checked and finalized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_story.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_story.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/DeliveryCheckPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DeliveryCheckPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/TescoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TescoSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/checkDeliveryService.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_3.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/filterForClubcardProducts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_4.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/changeLanguage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_5.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/userLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user_story_6.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/emptyShoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +58,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: checkDeliveryService.executor": "Run",
     "Cucumber Java.Feature: productSearch.executor": "Run",
+    "Cucumber Java.Feature: userLogin.executor": "Run",
     "Cucumber Java.Feature: user_story_1.executor": "Run",
     "Cucumber Java.Feature: user_story_5.executor": "Run",
     "Cucumber Java.Scenario: .executor": "Run",
     "Cucumber Java.Scenario: Search for a product that is not available.executor": "Run",
     "Cucumber Java.Scenario: Search for a product.executor": "Run",
+    "Cucumber Java.Scenario: Verify invalid ZIP code.executor": "Run",
     "Cucumber Java.Scenario: Verify valid ZIP code.executor": "Run",
     "JUnit.TescoSteps.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -82,7 +76,26 @@
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Search for a product that is not available">
+  <component name="RunManager" selected="Cucumber Java.Feature: checkDeliveryService">
+    <configuration name="Feature: checkDeliveryService" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/checkDeliveryService.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="projectwork" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: checkDeliveryService" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: productSearch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/productSearch.feature" />
@@ -102,14 +115,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: user_story_1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: userLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user_story_1.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/userLogin.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="projectwork" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: user_story_1" />
+      <option name="SUGGESTED_NAME" value="Feature: userLogin" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,33 +174,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user_story_5.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="projectwork" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Search for a product that is not available" />
+        <item itemvalue="Cucumber Java.Feature: checkDeliveryService" />
+        <item itemvalue="Cucumber Java.Feature: userLogin" />
         <item itemvalue="Cucumber Java.Feature: productSearch" />
+        <item itemvalue="Cucumber Java.Scenario: Search for a product that is not available" />
         <item itemvalue="Cucumber Java.Scenario: Search for a product" />
-        <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="Cucumber Java.Feature: user_story_1" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721225335905</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit 10 -  4. project day work : feature product search successfully implemented/run - all project files checked and finalized">
+      <option name="closed" value="true" />
+      <created>1721312683437</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721312683437</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +314,7 @@
     <MESSAGE value="commit 7 -  2. project day work : first feature implemented - all feature files renamed - + classes uploaded" />
     <MESSAGE value="commit 8 -  3. project day work : first feature finalized - simplified step definitions and methods + code reformatted" />
     <MESSAGE value="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 9 -  3. project day work : feature 5 login - UI elements defined + methods/ steps created - no program validation error , still the web elements defined are not interactable - to be checked tomorrow" />
+    <MESSAGE value="commit 10 -  4. project day work : feature product search successfully implemented/run - all project files checked and finalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 10 -  4. project day work : feature product search successfully implemented/run - all project files checked and finalized" />
   </component>
 </project>

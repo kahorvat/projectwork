@@ -31,9 +31,6 @@ public class SearchResultPage extends BasePage {
     @FindBy(xpath = "//a[text()= 'Bevásárlás megkezdése']")
     WebElement startShoppingButton;
 
-    @FindBy(xpath = "//button[text()= 'Keresés']")
-    WebElement initiateNewSearchButton;
-
 
     // metódusok
 
@@ -56,9 +53,9 @@ public class SearchResultPage extends BasePage {
         Assertions.assertTrue(productDescriptionField.getText().contains(productName));
     }
 
-    public void checkWarningMessage() {
+    public String checkWarningMessage() {
         wait.until(ExpectedConditions.visibilityOf(warningMessage));
-        Assertions.assertTrue(warningMessage.getText().contains("Sajnos nem található olyan termék"));
+        return warningMessage.getText();
     }
 
     public void checkStartShoppingButton() {

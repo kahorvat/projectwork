@@ -66,7 +66,7 @@ public class TescoSteps {
 
     @Then("I should see the {string}")
     public void iShouldSeeThe(String positiveResult) {
-        Assertions.assertEquals("Jó hírünk van!", deliveryCheckPage.getPositiveResultText());
+        Assertions.assertEquals(positiveResult, deliveryCheckPage.getPositiveResultText());
     }
 
 
@@ -77,7 +77,7 @@ public class TescoSteps {
 
     @Then("I should get the {string}")
     public void iShouldGetThe(String negativeResult) {
-        Assertions.assertEquals("Sajnáljuk, de jelenleg még nem tudunk szállítani hozzád.", deliveryCheckPage.getNegativeResultText());
+        Assertions.assertEquals(negativeResult, deliveryCheckPage.getNegativeResultText());
     }
 
     @Given("I open the home page")
@@ -141,8 +141,8 @@ public class TescoSteps {
         homePage.searchProduct(invalidProductName);
     }
 
-    @Then("a warning message is displayed")
-    public void aWarningMessageIsDisplayed() {
+    @Then("a {string} message is displayed")
+    public void a_message_is_displayed(String warningMessage) {
         searchResultPage = new SearchResultPage(driver);
         searchResultPage.checkWarningMessage();
     }

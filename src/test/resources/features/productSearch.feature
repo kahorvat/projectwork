@@ -32,7 +32,7 @@ Feature: Search for a product
     Scenario:  Search for a product that is not available
 
       When I search for "Q012"
-      Then a warning message is displayed
+      Then a "Sajnos nem található olyan termék" message is displayed
       And the start shopping button is displayed
 
 

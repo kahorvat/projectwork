@@ -60,8 +60,4 @@ public class DeliveryCheckPage extends BasePage {
         return negativeResultText.getText();
     }
 
-    public WebElement getAcceptCookiesButton() {
-        return acceptCookiesButton;
-    }
-
 }
